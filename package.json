@@ -1,0 +1,11 @@
+{
+  "name": "cinescript",
+  "version": "1.0.0",
+  "description": "Site permettant d'accèder aux films disponible dans le cinéma ",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Loeven Axel et Tournoy Noa",
+  "license": "ISC"
+}
