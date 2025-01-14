@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cinescript</title>
+    <link rel="stylesheet" href="src/styles/pages/search.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Cinescript</h1>
+      <div class="wrap">
+        <div class="search">
+          <input
+            type="search"
+            id="search-input"
+            name="q"
+            aria-label="Search a movie"
+          />
+        </div>
+      </div>
+      <div id="results"></div>
+      <div id="error-message"></div>
+      <div id="movie-list"></div>
+    </main>
+    <script src="src/scripts/common.js"></script>
+    <script src="src/scripts/search.js"></script>
+  </body>
+</html>

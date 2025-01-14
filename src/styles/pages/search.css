@@ -1,0 +1,26 @@
+.search {
+  width: 100%;
+  position: relative;
+  display: grid;
+}
+
+#search {
+  width: 100%;
+  border: 3px solid white;
+  height: 20px;
+  border-radius: 8px;
+  outline: none;
+  color: white;
+}
+
+#search:focus {
+  border: 3px solid #f5f5f5;
+}
+
+.wrap {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

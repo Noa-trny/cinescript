@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cinescript</title>
+    <script src="/src/scripts/common.js" type="module"></script>
+    <link rel="stylesheet" href="/src/styles/pages/index.css" />
+  </head>
+
+  <body>
+    <div id="header-container"></div>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li><a href="movie.html">Movie</a></li>
+          <li><a href="search.html">Search</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Cinescript</h1>
+      <div class="trending">
+        <h2>Les films du moment</h2>
+        <div id="trending-movies">
+          <img src="src/assets/arrow.png" id="left" />
+          <div id="movie-list"></div>
+          <img src="src/assets/arrow.png" id="right" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 Cinescript</p>
+    </footer>
+    <script src="./src/scripts/trending-movie.js" type="module"></script>
+    <script src="src/scripts/scroll-movie.js" type="module"></script>
+  </body>
+</html>

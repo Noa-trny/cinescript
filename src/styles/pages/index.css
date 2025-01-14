@@ -1,0 +1,90 @@
+h1 {
+  text-align: center;
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+body > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+#trending-movies {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+#left {
+  width: 2.5vw;
+  position: absolute;
+  left: 20px;
+  top: 45%;
+  rotate: 180deg;
+}
+
+#right {
+  width: 2.5vw;
+  position: absolute;
+  right: 20px;
+  top: 45%;
+}
+
+
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  #search-bar {
+    width: 60vw;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .movieCard h3 {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  #search-bar {
+    width: 80vw;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .movieCard h3 {
+    font-size: 0.8rem;
+  }
+
+  .movieCard h3 {
+    font-size: 0.6rem;
+  }
+}
