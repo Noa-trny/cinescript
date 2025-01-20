@@ -44,10 +44,3 @@ function loadTrendingFilms() {
 
 loadTrendingFilms();
 
-movieList.addEventListener("scroll", function () {
-  const scrollThreshold = 60;
-  if (movieList.scrollLeft >= movieList.scrollWidth - movieList.clientWidth - scrollThreshold) {
-    pageNb++;
-    loadTrendingFilms();
-  }
-});

@@ -1,0 +1,115 @@
+/* Container layout */
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Top row styling */
+#top-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#top-left, #top-right {
+    flex: 1;
+    padding: 15px;
+}
+
+/* Main content layout */
+#main-content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+}
+
+/* Poster styling */
+#poster-container img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Movie details section */
+#movie-details {
+    color: var(--primary-color);
+}
+
+/* Section styling */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+/* Headings */
+h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+/* Lists styling */
+#actors-list,
+#directors-list,
+#writers-list {
+    list-style: none;
+    padding: 0;
+}
+
+#actors-list li,
+#directors-list li,
+#writers-list li {
+    padding: 8px 0;
+    font-size: 1.1rem;
+}
+
+/* Plot section */
+#plot p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* Cast section layout */
+#cast {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #main-content {
+        grid-template-columns: 1fr;
+    }
+
+    #poster-container {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    #cast {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    #container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #actors-list li,
+    #directors-list li,
+    #writers-list li,
+    #plot p {
+        font-size: 1rem;
+    }
+}

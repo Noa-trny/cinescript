@@ -59,10 +59,8 @@ body {
 
 .movieCard h3 {
   font-weight: 800;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   color: white;
+  word-wrap: break-word;
 }
 
 .movieCard p {
