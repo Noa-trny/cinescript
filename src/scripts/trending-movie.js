@@ -35,9 +35,9 @@ function loadTrendingFilms() {
         moviePlot.innerHTML = data.Plot;
 
         movieList.appendChild(movieCard);
-        movieCard.appendChild(moviePlot);
         movieCard.appendChild(movieTitle);
         movieCard.appendChild(moviePoster);
+        movieCard.appendChild(moviePlot);
       });
   }
 }

@@ -84,17 +84,10 @@ a {
 }
 
 #movie-list {
-  width: 90vw;
-  overflow-x: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
   padding: 3vh 3vw;
-  display: grid;
+  display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
   gap: 2vw;
 }
 
-#movie-list::-webkit-scrollbar {
-  display: none;
-}
