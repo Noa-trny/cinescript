@@ -2,9 +2,8 @@ let pageNb = 0;
 const movieList = document.getElementById("movie-list");
 const apikey = "fa5a9170";
 const moviesToLoad = [
-  "tt0892769", "tt1646971", "tt2386490", "tt0092099", "tt1745960",
-  "tt2015381", "tt3896198", "tt6791350", "tt0119217", "tt15398776",
-  "tt2084970", "tt3907584"
+  "tt13186482", "tt18259086", "tt26743414", "tt15239678", "tt11315808",
+  "tt28607951"
 ];
 
 function loadTrendingFilms() {
