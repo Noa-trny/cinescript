@@ -1,7 +1,8 @@
 .search {
   width: 100%;
-  position: relative;
   display: grid;
+  position: relative;
+  margin-bottom: 40px;
 }
 
 #search {
@@ -19,8 +20,15 @@
 
 .wrap {
   width: 30%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  margin: 0 auto;
+  transform: none;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 100%;
 }
