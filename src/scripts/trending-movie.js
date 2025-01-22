@@ -61,7 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
       if ((pageNb + 1) * movieBatch < moviesToLoad.length) {
         pageNb++;
         loadTrendingFilms();
-      } else {
         loadMoreBtn.style.display = "none";
       }
     });
