@@ -17,18 +17,3 @@
 #search:focus {
   border: 3px solid #f5f5f5;
 }
-
-.wrap {
-  width: 30%;
-  position: relative;
-  margin: 0 auto;
-  transform: none;
-}
-
-img {
-  display: block;
-  margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  max-width: 100%;
-}

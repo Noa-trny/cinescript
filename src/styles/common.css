@@ -89,3 +89,17 @@ a {
   gap: 2vw;
 }
 
+.wrap {
+  width: 30%;
+  position: relative;
+  margin: 0 auto;
+  transform: none;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 100%;
+}
