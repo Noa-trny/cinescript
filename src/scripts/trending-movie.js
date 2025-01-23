@@ -2,6 +2,7 @@ let pageNb = 0;
 const movieList = document.getElementById("movie-list");
 const apikey = "fa5a9170";
 const moviesToLoad = [
+  // Liste des films à charger
   "tt13186482",
   "tt18259086",
   "tt26743414",
@@ -22,12 +23,14 @@ function loadTrendingFilms() {
   const endIndex = (pageNb + 1) * batchSize;
 
   for (let i = startIndex; i < endIndex; i++) {
+    // Boucle pour charger les films
     if (i >= moviesToLoad.length) {
-      return;
+      // Si on a chargé tous les films
+      return; // On arrête la fonction
     }
 
     const url = `https://www.omdbapi.com/?apikey=${apikey}&i=${moviesToLoad[i]}`;
-    fetch(url)
+    fetch(url) // Requête API
       .then((response) => response.json())
       .then((data) => {
         const movieCard = document.createElement("a");
@@ -58,10 +61,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const loadMoreBtn = document.getElementById("load-more-btn");
   if (loadMoreBtn) {
     loadMoreBtn.addEventListener("click", () => {
+      // on écoute le clic sur le bouton "voir plus de films"
       if ((pageNb + 1) * movieBatch < moviesToLoad.length) {
-        pageNb++;
-        loadTrendingFilms();
-        loadMoreBtn.style.display = "none";
+        // Si on a encore des films à charger
+        pageNb++; // On incrémente la page
+        loadTrendingFilms(); // On charge les films
+        loadMoreBtn.style.display = "none"; // On cache le bouton
       }
     });
   }

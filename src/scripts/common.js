@@ -37,8 +37,6 @@ async function loadContent() {
     footerCssLink.rel = "stylesheet";
     footerCssLink.href = "src/components/footer/footer.css";
     document.head.appendChild(footerCssLink);
-
-    
   } catch (error) {
     console.error("Erreur lors du chargement du header:", error);
   }

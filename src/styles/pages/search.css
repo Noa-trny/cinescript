@@ -7,11 +7,11 @@
 
 #search {
   width: 100%;
-  border: 3px solid white;
+  border: 3px solid var(--primary-color);
   height: 20px;
   border-radius: 8px;
   outline: none;
-  color: white;
+  color: var(--primary-color);
 }
 
 #search:focus {

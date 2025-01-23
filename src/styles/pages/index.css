@@ -1,59 +1,43 @@
-h1 {
-  text-align: center;
-  font-size: 7rem;
-}
-
 h2 {
   font-size: 3rem;
   text-align: center;
 }
 
-h3 {
-  font-size: 2rem;
-}
-
-body > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-}
-
-#trending-movies {
-  position: relative;
-  width: 100%;
+.load-more {
   display: flex;
-  align-items: center;
   justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-#left {
-  width: 2.5vw;
-  position: absolute;
-  left: 20px;
-  top: 45%;
-  rotate: 180deg;
+#load-more-btn {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-#right {
-  width: 2.5vw;
-  position: absolute;
-  right: 20px;
-  top: 45%;
+#load-more-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+#load-more-btn:active {
+  transform: translateY(0);
 }
 
 /* Responsive styles */
 
 @media (max-width: 768px) {
-  h1 {
-    font-size: 4rem;
-  }
-
-  #search-bar {
-    width: 60vw;
-  }
-
   h2 {
     font-size: 2.5rem;
   }
@@ -64,55 +48,11 @@ body > img {
 }
 
 @media (max-width: 480px) {
-  h1 {
-    font-size: 3rem;
-  }
-
-  #search-bar {
-    width: 80vw;
-  }
-
   h2 {
-    font-size: 2rem;
-  }
-
-  .movieCard h3 {
-    font-size: 0.8rem;
+    font-size: 1.5rem;
   }
 
   .movieCard h3 {
     font-size: 0.6rem;
   }
-}
-
-.load-more {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-#load-more-btn {
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-    padding: 15px 30px;
-    font-size: 16px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-family: inherit;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-#load-more-btn:hover {
-    background-color: white;
-    color: black;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
-}
-
-#load-more-btn:active {
-    transform: translateY(0);
 }
