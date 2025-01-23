@@ -37,6 +37,11 @@ Pour installer Cinescript, suivez ces étapes :
     npm install
     ```
 
+
+## Lien du dépot GitHub 
+
+- https://github.com/axelloeven/cinescript
+
 ## Utilisation
 
 Pour commencer à utiliser Cinescript, exécutez la commande suivante :
