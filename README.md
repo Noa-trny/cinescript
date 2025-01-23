@@ -61,7 +61,7 @@ Si vous souhaitez contribuer à l'amélioration de Cinescript, veuillez suivre l
 
 Merci de contribuer à l'amélioration de Cinescript !
 
-### Licence
+## Licence
 
 Ce projet est sous licence MIT. Voir le fichier [LICENSE](/LICENSE) pour plus de détails.
 
